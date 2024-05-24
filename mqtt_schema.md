@@ -27,6 +27,7 @@ The base schema path is `emf/air_quality_sensors/<name>/device/` where `<name>` 
 | `timings/last_loop_start`             | The device timestamp in milliseconds at the start of the last update loop |                                                              |
 | `timings/last_loop_end`               | The device timestamp in milliseconds at the end of the last update loop |                                                              |
 | `timings/last_sensor_update_duration` | The amount of time it took to update sensors in the last measurement cycle |                                                              |
+| `timings/rebooted_since_last_update`  | 1 if the device rebooted since the last MQTT update, otherwise 0 | 0/1                                                          |
 | `alarms/co2/threshold`                | The configured CO2 alarm level, in parts per million (ppm); disabled if zero | 1000                                                         |
 | `alarms/co2/triggered`                | 1 if the CO2 alarm is currently triggered, otherwise 0       | 0/1                                                          |
 | `alarms/eco2/threshold`               | The configured eCO2 alarm level, in parts per million (ppm)  | 1000                                                         |
